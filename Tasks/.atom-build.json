@@ -1,0 +1,8 @@
+{
+  "cmd": "C:\\go\\bin\\go.exe run {FILE_ACTIVE}",
+  "shell": true,
+  "env": {
+    "GOROOT": "C:\\go",
+    "GOPATH": "C:\\gohome\\Tasks"
+  }
+}

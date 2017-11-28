@@ -1,0 +1,98 @@
+CREATE TABLE orders(ord_no smallint PRIMARY KEY,
+ord_date date,item_code smallint REFERENCES items(item_code),
+item_grade character(1),ord_qty numeric,ord_amount numeric);"
+
+
+//actor
+CREATE TABLE artists(artist_id smallint PRIMARY KEY,
+artist_category_code varchar,
+payment_method_code smallint,
+first_name varchar,
+last_name varchar,
+date_of_birth timestamp,
+gender enum,
+latest_news link,
+picture_filename,
+other_details)
+
+//actor category
+CREATE TABLE ref_artists_categories(artists_category_code smallint PRIMARY KEY,
+artists_category_description varchar)
+
+
+
+CREATE TABLE artist_tour_news(item_id smallint PRIMARY KEY,
+artist_id smallint,
+publish_from_date timestamp,
+publish_to_date timestamp,
+news_text varchar,
+url_link link
+)
+
+
+CREATE TABLE events(event_id smallint PRIMARY KEY,
+event_category_code smallint,
+artist_id smallint,
+venue_id smallint,
+event_name varchar,
+event_start_datetime timestamp,
+event_end_datetime timestamp,
+tickets_on_sale_date timestamp,
+other_details link)
+
+CREATE TABLE ref_event_categories(event_category_code smallint PRIMARY KEY,
+event_category_description varchar)
+
+CREATE TABLE venues(venue_id smallint PRIMARY KEY,
+address_id varchar,
+venue_name varchar,
+venue_seat_capacity smallint)
+
+CREATE TABLE venue_directions(direction_id smallint PRIMARY KEY,
+venue_id smallint,
+from_direction varchar,
+instructions varchar)
+
+CREATE TABLE addresses(address_id smallint PRIMARY KEY,
+address_line_1 varchar,
+address_line_2 varchar,
+city varchar,
+postal_code smallint,
+state_province_county varchar,
+phone varchar,
+other_address_details varchar)
+
+CREATE TABLE member_orders(order_id smallint PRIMARY KEY,
+event_id smallint,
+member_id smallint,
+order_status varchar,
+order_date timestamp,
+order_phone_number varchar,
+order_card_number varchar)
+
+CREATE TABLE venue_rows(venue_id smallint PRIMARY KEY,
+row_number varchar,
+row_seat_count smallint)
+
+
+
+
+//credit card map to ethereum acct/phone# to emei?
+CREATE TABLE members(member_id smallint PRIMARY KEY,
+address_id smallint,
+first_name varchar,
+last_name varchar,
+gender varchar,
+email_address varchar,
+password varchar,
+credit_card_type enum,
+credit_card_number varchar,
+card_expiration_date varchar)
+
+CREATE TABLE seat_reservations(seat_reservation_id smallint PRIMARY KEY,
+order_id smallint,
+row_number varchar,
+venue_id smallint,
+seat_number varchar)
+
+
