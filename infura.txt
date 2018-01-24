@@ -1,0 +1,35 @@
+0x3A3BCCA7F5B99285979c7F3d48D8430222c59f97
+
+infura
+
+aW4LIKVrbtDy5cb8HuMk
+
+contract making TCT 
+0xBF5a664DdAB7831cE071b0B1e7758B2e0C22a435
+
+Hello JIm!
+Thank you for registering for early access to INFURA, we hope you enjoy our service and build incredible decentralized applications using INFURA as your engine!
+
+To get started, use the following provider URLs in your code (in place of localhost):
+
+Main Ethereum Network
+https://mainnet.infura.io/aW4LIKVrbtDy5cb8HuMk 
+
+Test Ethereum Network (Ropsten)
+https://ropsten.infura.io/aW4LIKVrbtDy5cb8HuMk 
+
+Test Ethereum Network (Rinkeby)
+https://rinkeby.infura.io/aW4LIKVrbtDy5cb8HuMk 
+
+Test Ethereum Network (Kovan)
+https://kovan.infura.io/aW4LIKVrbtDy5cb8HuMk 
+
+Test Ethereum Network (INFURAnet)
+https://infuranet.infura.io/aW4LIKVrbtDy5cb8HuMk 
+
+IPFS Gateway
+https://ipfs.infura.io 
+
+IPFS RPC
+https://ipfs.infura.io:5001 
+

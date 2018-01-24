@@ -1,0 +1,35 @@
+Token name: mytoken
+
+Token ticker: mtk
+
+Token decimals: 18
+
+Multisig wallet address: 0x31E5C0799D4951Ae38D0F578C97060A702ef40aa
+
+*****************************
+
+Crowdsale rate: 1000
+
+Crowdsale start time: 2017-12-31T14:27 (GMT - 6)
+
+Crowdsale end time: 2018-01-01T00:27 (GMT - 6)
+
+Compiler Version: 0.4.11
+
+Is optimization enabled?: true
+
+*****************************
+
+Finalize agent contract name: ReservedTokensFinalizeAgent
+
+Finalize agent contract address for Tier 1: 0x1d08d6a48f9919738cEf0832DeAdE0c28F2CEf4c
+
+*****************************
+
+****Finalize agent contract ABI:**** 
+
+[{"constant":false,"inputs":[],"name":"finalizeCrowdsale","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"isFinalizeAgent","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"isSane","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"crowdsale","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"token","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"inputs":[{"name":"_token","type":"address"},{"name":"_crowdsale","type":"address"}],"payable":false,"type":"constructor"}]
+
+****Finalize agent contract ABI encoded constructor arguments for Tier 1:**** 
+
+00000000000000000000000056f635cbb08bb0c53a5134af4c01c76d51eaf3c6000000000000000000000000e442a76a1838cc0c5d25aa284a700117e9342b4c

@@ -1,0 +1,50 @@
+Using Truffle and testrpc. It's actually pretty easy to build a development environment and test different use cases.
+
+For the gas estimation, it's mostly based on Web3 native functions:
+
+You can retrieve the gas price (in wei) using web3.eth.getGasPrice
+
+The function estimateGas will give the gas estimation for a function (with the parameters passed)
+
+Multiply number of gas by gas price to get the gas cost estimation.
+
+For example
+
+var TestContract = artifacts.require("./Test.sol");
+
+// Run unit tests to populate my contract
+// ...
+// ...
+
+// getGasPrice returns the gas price on the current network
+TestContract.web3.eth.getGasPrice(function(error, result){ 
+    var gasPrice = Number(result);
+    console.log("Gas Price is " + gasPrice + " wei"); // "10000000000000"
+
+    // Get Contract instance
+    TestContract.deployed().then(function(instance) {
+
+        // Use the keyword 'estimateGas' after the function name to get the gas estimation for this particular function 
+        return instance.giveAwayDividend.estimateGas(1);
+
+    }).then(function(result) {
+        var gas = Number(result);
+
+        console.log("gas estimation = " + gas + " units");
+        console.log("gas cost estimation = " + (gas * gasPrice) + " wei");
+        console.log("gas cost estimation = " + TestContract.web3.fromWei((gas * gasPrice), 'ether') + " ether");
+    });
+});
+Result in my case (private network):
+
+> truffle test
+Using network 'test'.
+
+Compiling .\contracts\Migrations.sol...
+Compiling .\contracts\Test.sol...
+
+Gas Price is 20000000000 wei
+gas estimation = 26794 units
+gas cost estimation = 535880000000000 wei
+gas cost estimation = 0.00053588 ether
+
