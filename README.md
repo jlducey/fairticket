@@ -3,7 +3,7 @@
 ## Fair Ticketing Code Repository
 To get our White paper, please visit: http://jimdjimdjimdtesthostingpackage-com.stackstaging.com/wordpress/
 
-AFter a lot of experimenting, found that the most productive language choices for ticketing web app development purposes were the HTML5 ones, consisting of; HTML, Javascript, and CSS. With Bootstrap they could be used with Android easily. Looked at C++ for speed when scaling, but Go is easily a better choice. Go was built to scale, lends itself well to being the backend development language for the ticketing project.
+After a lot of experimenting, found that the most productive language choices for our ticketing web app development purposes were the HTML5 ones, consisting of; HTML, Javascript, and CSS. Combined with Bootstrap they will handle Android easily. Looked at C++ for speed when scaling out, but Go is easily a better choice. Go was built to scale, lends itself well to being the backend development language for the ticketing project.
 
 PostgreSQL was the obvious choice for a database, it is fast, scales well and has pure Go drivers that worked well first try.
 
@@ -29,6 +29,7 @@ Smart contract development is being done with solidity, ethereum-testRPC, truffl
 
 ## Small Apology
 Sorry about the mix of files in here. Developed with Eclipse editor for C++, Perl, Python, Java and Javascript in the past. Used a local NT-CVS repository to track changes and keep code safe, most my projects has were under NDA's. Started working with Golang and Solidity and found that the Eclipse package for Golang was terrible when compared to Atom and MS Visual Studio. Both the editors have excellent support for Golang, Visual Studio is the best Solidity editor I have found so far. Both editors integrate easily with Github. Files were local then pushed to Github, may create a new repo with branches to isolate code, time permitting.
+
 
 
 ## Visit our website
