@@ -1,0 +1,6 @@
+.vagrant/
+node_modules/
+build/
+*.log
+.directory
+package-lock.json
