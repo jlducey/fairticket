@@ -1,0 +1,15 @@
+{
+  "name": "starhackit",
+  "description": "react + node fullstack starter kit with authentication and authorization, data backed by SQL",
+  "version": "5.2.0",
+  "private": false,
+  "scripts": {
+    "install": "echo \"Run the command \"npm install\" in the client and in the server\"",
+    "version": "cd client && npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:FredericHeem/starhackit.git"
+  }
+}

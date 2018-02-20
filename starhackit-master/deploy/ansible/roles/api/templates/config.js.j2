@@ -1,0 +1,33 @@
+import _ from 'lodash';
+
+/* global process */
+let env = process.env;
+
+let config = {
+
+    general: {
+        title: '{{title}}',
+        description: '{{description}}',
+        apiUrl: '/api/v1/',
+        analytics: {
+            google: '{{google_analytics}}'
+        },
+        socialAuth: ['facebook'],
+        debug: {
+          log: false,
+          redux: false,
+          i18n: false
+        }
+    },
+
+    development: {
+        env: "development"
+    },
+
+    production: {
+        env: "production"
+
+    }
+};
+
+export default _.extend( {}, config.general, config[ env.NODE_ENV ] );
