@@ -3,12 +3,15 @@
 ## Fair Ticketing Code Repository
 To get our White paper, watch for link, coming soon.
 
-Done reseach and recent coursework in DevOps, C++, Golang, AWS and serverless computing.
-In charge of development of Ethereum based smart contracts in Solidty with Truffle, Mocha and Chai.
-Smart apps require Web3 interfacing with web apps, proficient in HTML5, Javascript, jQuery and learning React.
+Reseach and recent coursework in;
+* DevOps
+* C++, Golang
+* AWS and serverless computing.
+Developing Ethereum based smart contracts in Solidty with Truffle, Mocha and Chai.
+>Smart apps require Web3 interfacing with web apps, proficient in HTML5, Javascript, jQuery and learning React.
 White paper and crowdfunding coursework.
 
-After experimenting, found that the most productive language choices for our ticketing web app development purposes were the HTML5 ones, consisting of; HTML, Javascript, and CSS. Combined with Bootstrap they will handle Android easily. Looked at C++ for speed when scaling out, but Go is easily a better choice. Go was built to scale, lends itself well to being the backend development language for the ticketing project.
+>After experimenting, found that the most productive language choices for our ticketing web app development purposes were the HTML5 ones, consisting of; HTML, Javascript, and CSS. Combined with Bootstrap they will handle Android easily. Looked at C++ for speed when scaling out, but Go is easily a better choice. Go was built to scale, lends itself well to being the backend development language for the ticketing project.
 
 PostgreSQL was the obvious choice for a database, it is fast, scales well and has pure Go drivers that worked well first try.
 
